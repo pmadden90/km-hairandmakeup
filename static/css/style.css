@@ -35,10 +35,24 @@
     width: 95vw;
     }
 
+.modal-dialog {
+    width: 90%;
+}
+
 .modal-header {
     align: center;
 }
 
+.modal-content {
+    width: 70vw;
+    height: auto;
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 85vw;
+}
 
 .enquiry-form {
     width: auto;
