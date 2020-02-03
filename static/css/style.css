@@ -28,7 +28,7 @@
     }
 
 
-.modal {
+/*.modal {
     text-align: center;
     padding: 0;
     margin: 0 auto;
@@ -36,25 +36,27 @@
     }
 
 .modal-dialog {
-    width: 90%;
+    width: 90vw;
+    height: 95vh;
 }
 
-.modal-header {
+/*.modal-header {
     align: center;
 }
 
 .modal-content {
-    width: 70vw;
+    width: 95vw;
     height: auto;
 }
 
 .modal-open .modal {
     overflow-x: hidden;
     overflow-y: auto;
-    width: 85vw;
+    width: 95vw !important;
+    height: 95vh !important;
 }
 
 .enquiry-form {
-    width: auto;
-    height: auto;
-}
+    width: 95vw;
+    height: 95vh;
+} */

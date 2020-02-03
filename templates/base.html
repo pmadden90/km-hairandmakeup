@@ -61,12 +61,13 @@
 				<h1 class="mx-auto my-0 text-uppercase">Kylie Mullaney</h1>
 				<h2 class="text-white-50 mx-auto mt-2 mb-5">Hair stylist and makeup artist based around Carrick On
 					Shannon</h2>
-                <button data-toggle='modal' data-target='#appointmentModal' class="btn btn-lg btn-primary">Enquire Now!
-                </button>				
+                <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSf65z2fo-0Yc6CyK5DiTVAqqi-oRcc58k2KvEZdQ2gGH1QXeg/viewform?embedded=true"><button class="btn btn-lg btn-primary">Enquire Now!</button>
+                </a>				
 			</div>
 		</div>
 	</header>
-
+<!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf65z2fo-0Yc6CyK5DiTVAqqi-oRcc58k2KvEZdQ2gGH1QXeg/viewform?embedded=true" 
+        class="enquiry-form" height="800" width="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>-->
 	{% block content %}
 	{% endblock %}
 
@@ -140,18 +141,22 @@
 		</div>
 	</footer>
 
-    <!--Appointment Modal -->
-<div class="modal fade modal-lg modal-apt" id="appointmentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" style="width:100%" role="document" align="center">
+  
+
+<!-- Appointment Modal -->
+<div class="modal fade" id="appointmentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" align="center" id="myModalLabel">Enquiry Form</h4>
+        <h5 class="modal-title" id="exampleModalLongTitle">Booking Enquiry</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
       <div class="modal-body">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf65z2fo-0Yc6CyK5DiTVAqqi-oRcc58k2KvEZdQ2gGH1QXeg/viewform?embedded=true" 
-        class="enquiry-form" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      </div>
+        <!----><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf65z2fo-0Yc6CyK5DiTVAqqi-oRcc58k2KvEZdQ2gGH1QXeg/viewform?embedded=true" 
+        class="enquiry-form" height="800" width="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>      
     </div>
   </div>
 </div>
@@ -165,6 +170,8 @@
 
 	<!-- Custom scripts for this template -->
 	<script src="../static/js/grayscale.min.js"></script>
+
+    
 
 </body>
 
